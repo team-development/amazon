@@ -1,0 +1,11 @@
+- git:
+    repo: 'https://github.com/james-knott/vimrc.git'
+    dest: /home/vagrant/.vim_runtime
+
+- script: /home/vagrant/.vim_runtime/install_awesome_vimrc.sh 
+  become: yes
+  become_user: vagrant
+
+- name: Echo a flag to turn off error message
+  shell: echo "let g:go_version_warning = 0" >> /home/vagrant/.vimrc
+
