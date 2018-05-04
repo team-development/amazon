@@ -14,6 +14,8 @@ Vagrant.configure("2") do |config|
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "winky/amazonlinux-2"
   config.vm.provision :shell, path: "bootstrap.sh"
+  config.vm.provision :shell,
+      inline: 'PYTHONUNBUFFERED=1 ansible-playbook /vagrant/ansible/dev.yml -c local'
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
