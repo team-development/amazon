@@ -12,4 +12,5 @@ export ANSIBLE_CONFIG=/home/vagrant/ansible.cfg
 sudo -u vagrant /home/vagrant/.local/bin/ansible-playbook /vagrant/ansible/dev.yml
 #git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sudo -u vagrant chmod u+x /home/vagrant/.vim_runtime/install_awesome_vimrc.sh
-sudo -u vagrant sh ~/.vim_runtime/install_awesome_vimrc.sh
+sudo -u vagrant /home/vagrant/.vim_runtime/install_awesome_vimrc.sh
+sudo -u vagrant echo "let g:go_version_warning = 0" >> /home/vagrant/.vimrc
