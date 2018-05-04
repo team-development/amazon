@@ -9,4 +9,5 @@ sudo pip install ansible --user
 sudo -u vagrant wget https://raw.githubusercontent.com/ansible/ansible/devel/examples/ansible.cfg
 echo "roles_path    = /vagrant/ansible" >> /home/vagrant/ansible.cfg
 export ANSIBLE_CONFIG=/home/vagrant/ansible.cfg
+sudo -u vagrant chmod u+x /home/vagrant/.vim_runtime/install_awesome_vimrc.sh
 sudo -u vagrant /home/vagrant/.local/bin/ansible-playbook /vagrant/ansible/dev.yml
