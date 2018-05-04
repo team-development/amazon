@@ -2,5 +2,5 @@
 
 echo "Installing Ansible..."
 sudo yum update -y
-sudo yum install python3 -y
-pip3 install ansible --user
+sudo yum install python-pip -y
+pip install ansible --user
