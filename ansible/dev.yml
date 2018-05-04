@@ -1,0 +1,6 @@
+- hosts: localhost
+  remote_user: vagrant
+  become_user: vagrant
+  roles:
+    - developer 
+  
